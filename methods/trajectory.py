@@ -15,12 +15,6 @@ class Trajectory(RungeKutta):
             trajectory.append((x, y))  # Добавляем точку в траекторию
         return trajectory  # Возвращаем список траектории
 
-    # Метод для вывода траектории в консоль
-    def print_trajectory(self):
-        # Для каждого пункта траектории выводим координаты в консоль
-        for point in self.get_trajectory():
-            print(f"Координата: {point}")  # Печатаем координаты текущей точки
-
     # Метод для визуализации траектории с помощью графика
     def plot_trajectory(self):
         # Строим график, используя координаты X и Y

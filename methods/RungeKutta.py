@@ -23,7 +23,7 @@ class RungeKutta(CirclePoints):
         self.solve()
 
     def f(self, t, x, y):
-        dx_dt = -np.sin(t) * x
+        dx_dt = np.sin(t) * x
         dy_dt = np.exp(t) * y
         return dx_dt, dy_dt
 
