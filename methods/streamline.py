@@ -11,11 +11,10 @@ class StrLine:
             np.linspace(-5, 5, 1000), np.linspace(-5, 5, 1000)
         )
         # Поле скоростей
-        self.v_x = self.x * math.sin(self.time)  # x-компонента скорости
-        self.v_y = self.y * math.exp(self.time)  # y-компонента скорости
+        self.v_x = self.x * math.sin(self.time)
+        self.v_y = self.y * math.exp(self.time)
 
     def graf(self, save_dir):
-        # Создание общей фигуры для отображения попарно
         fig, axes = plt.subplots(1, 2, figsize=(16, 6))
 
         # Линии тока (streamplot использует поле скоростей для вычисления)
